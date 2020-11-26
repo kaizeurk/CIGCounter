@@ -159,6 +159,11 @@ exports.decreaseCounter = (req, res, next) =>
     });
 };
 
+/**
+ * 
+ * @param {*} counter 
+ * @param {*} res 
+ */
 function modifyCounter(counter, res) 
 {
     Counter.updateOne(counter)
