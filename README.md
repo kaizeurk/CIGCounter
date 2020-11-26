@@ -11,7 +11,7 @@
 * démarrer le server pour qu'il écoute le port 3000
 - `nodemon server` ou  `node server.js`
 
-## test
+## API
 * Avec postman ou fiddler
 
 ## methode exposées:
@@ -25,3 +25,6 @@
 * put http://localhost:3000/api/counters/votre_parametre
 * detele http://localhost:3000/api/counters/votre_parametre
 
+## Tests unitaires
+* Ici nous avons choisi jasmine `npm install -g jasmine-node`
+* executer à la racine du projet jamine-node ./tests
