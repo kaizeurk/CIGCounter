@@ -166,7 +166,7 @@ exports.decreaseCounter = (req, res, next) =>
  */
 function modifyCounter(counter, res) 
 {
-    Counter.updateOne(counter)
+    Counter.updateOne({ _id: counter._id },counter)
         .then(() => {
             res.status(200).json(
                 { message: 'Compteur ' + counter.name + ' a mise à jour valeur = ' + counter.countNumber });
